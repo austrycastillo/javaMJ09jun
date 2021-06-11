@@ -1,0 +1,56 @@
+package com.educacionit.practicas;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		/*
+		 * if(condición){ instrucciones }
+		 * 
+		 * -*-*-* if(condición){ instrucciones 1 }else{ instrucciones 2 } if(condición){
+		 * instrucciones if(condición){ instrucciones } }
+		 * 
+		 * 
+		 * if(){}else if(){}else if(){} else{}
+		 */
+		/*
+		 * int num = 1; if(num > 10) { System.out.println("Si es mayor"); }else {
+		 * System.out.println("No es mayor"); }
+		 */
+
+		/*
+		 * vamos a un boliche pueden acceder personas entre 18 y 30 años
+		 */
+		/*
+		 * Scanner teclado = new Scanner(System.in);
+		 * System.out.println("Escribe tu edad"); int edad = teclado.nextInt(); if (edad
+		 * >= 18 && edad <= 30) { System.out.println("Bienvenid@ ;)"); if (edad == 22) {
+		 * System.out.println("Ganaste una bebida!!"); } } else {
+		 * System.out.println("Ups no puedes pasar ;("); if (edad < 18) {
+		 * System.out.println("por bebito"); } else { System.out.println("por viejito");
+		 * } }
+		 */
+
+		/*
+		 * solicitar un número por teclado verificar si tiene 1, 2, 3 , 4 o más cifras
+		 * ej -> 6(<10) , 85(>10 <100)
+		 */
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Escribe un número");
+		int num = teclado.nextInt();
+		if (num < 10) {
+			System.out.println(num + " tiene una cifra");
+		} else if (num >= 10 && num < 100) {
+			System.out.println(num + " tiene dos cifras");
+		} else if (num >= 100 && num < 1000) {
+			System.out.println(num + " tiene tres cifras");
+		}else if(num >= 1000 && num < 10000) {
+			System.out.println(num + " tiene cuatro cifras");
+		}else {
+			System.out.println(num + " tiene más de cuatro cifras");
+		}
+	}
+
+}
