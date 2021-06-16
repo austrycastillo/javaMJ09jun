@@ -1,0 +1,85 @@
+package com.educacionit.jugando;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		/*
+		 * if(true) System.out.println("Estoy if"); else
+		 * System.out.println("Estoy else");
+		 */
+		// armar un simple programa de logueo
+		// usando scanner y con usuario y clave
+		/*
+		 * System.out.println("Escribe tu usuario"); String usuario = teclado.next();
+		 * System.out.println("Escribe tu clave"); String clave = teclado.next(); String
+		 * correcto = "admin"; if(usuario.equals(correcto) && clave.equals("abc123")) {
+		 * System.out.println("Bienvenido"); }else {
+		 * System.out.println("Datos incorrectos"); }
+		 */
+
+		/*
+		 * switch(variable){ case valor1: instrucciones break; case valor2:
+		 * instrucciones break; default: instrucciones break; }
+		 */
+		/*
+		 * String dia = "MIERCOLES"; switch(dia) { case "lunes":
+		 * System.out.println("Hoy es lunes de inicio"); break; case "martes":
+		 * System.out.println("Hoy es martes de helados"); break; case "miércoles": case
+		 * "MIERCOLES": case "Miércoles":
+		 * System.out.println("Hoy es miércoles de asado"); break; case "jueves":
+		 * System.out.println("Hoy es jueves de amor"); break; case "viernes":
+		 * System.out.println("Hoy es viernes de vino"); break; default:
+		 * System.out.println("Fin de semana ;)"); break;
+		 * 
+		 * }
+		 */
+
+		/*
+		 * DESARROLLAR UN SISTEMA DE CAJERO AUTOMÁTICO - VERIFICAR EL ACCESO - MENÚ - >
+		 * 1 consulta, 2 depósito
+		 */
+		/*
+		 * int claveCorrecta = 123, opt, saldo = 500, monto, cbu; String nombre;
+		 * System.out.println("**************Bienvenido al Banco" +
+		 * "\nEscribe tu clave"); int clave = teclado.nextInt(); if (clave ==
+		 * claveCorrecta) { System.out.println("Escribe una opción:\n\t1 Consulta" +
+		 * "\n\t2 Depósito \n\t3 Retiro \n\t4 Transferencia"); opt = teclado.nextInt();
+		 * switch (opt) { case 1: System.out.println("Tu saldo es " + saldo); break;
+		 * case 2: System.out.println("Monto a depositar?"); monto = teclado.nextInt();
+		 * saldo += monto; System.out.println("Depósito realizado correctamente, " +
+		 * "su saldo actual es " + saldo); break; case 3:
+		 * System.out.println("Monto a retirar?"); monto = teclado.nextInt(); if (monto
+		 * > saldo) { System.out.println("Saldo insuficiente!"); } else { saldo -=
+		 * monto; System.out.println("Retiro correcto, su saldo actual es " + saldo); }
+		 * break; case 4: System.out.println("Monto a transferir?"); monto =
+		 * teclado.nextInt(); if (monto > saldo) {
+		 * System.out.println("Saldo insuficiente!"); } else {
+		 * System.out.println("Escribe el cbu"); cbu = teclado.nextInt();
+		 * System.out.println("Escribe el nombre del beneficiario"); nombre =
+		 * teclado.next(); saldo -= monto;
+		 * System.out.println("Tranferencia exitosa para " + nombre + " al cbu " + cbu
+		 * +", su saldo actual es " + saldo); }
+		 * 
+		 * break; default: System.out.println("No existe la opción"); break; } } else {
+		 * System.out.println("Datos incorrectos"); }
+		 */
+
+		/*
+		 * while(condición){ instrucciones ajuste }
+		 */
+		int a = 1;
+		while (a <= 10) {
+			if(a!=2 && a!=7) {
+				System.out.println(a);
+			}
+			a++;
+		}
+		// a --> 11
+		// imprim --> 1 2 3 4
+
+	}
+
+}
