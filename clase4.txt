@@ -1,0 +1,66 @@
+package com.educacionit.practica;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		Scanner teclado2 = new Scanner(System.in);
+		/*
+		 * cada hora U$D16 max 40 = 40 * 16(640) cada hora exra U$D20, ej 2 desarrollar
+		 * un sistema para ingresar: - nombre -horas trabajadas en la semana mostrar el
+		 * detalle de pagos
+		 */
+		/*
+		 * String nombre; int horas, valorHoraComun = 16, valorHoraExtra = 20, tope =
+		 * 40; int sueldoTotal = 0, sueldoExtra = 0, sueldoComun = 0; int horasE = 0;
+		 * String usuario, clave; String usuarioC = "pepe", claveC = "a12";
+		 * System.out.println("Bienvenido, escribe tu usuario:"); usuario =
+		 * teclado2.nextLine(); System.out.println("escribe tu clave:"); clave =
+		 * teclado.next(); if (usuario.equals(usuarioC) && clave.equals(claveC)) {
+		 * System.out.println("Escribe tu nombre:"); nombre = teclado.next();//escribir
+		 * una palabra
+		 * System.out.println("Escribe las horas trabajadas durante la semana"); horas =
+		 * teclado.nextInt(); if (horas <= tope) { sueldoComun = horas * valorHoraComun;
+		 * } else { horasE = horas - tope; sueldoExtra = horasE * valorHoraExtra;
+		 * sueldoComun = tope * valorHoraComun; } sueldoTotal = sueldoComun +
+		 * sueldoExtra; System.out.println(nombre + " el detalle a cobrar:\n" +
+		 * "\tMonto base----> " + sueldoComun +"\n\tMonto por horas extras----> " +
+		 * sueldoExtra + "\n\tTotal a cobrar----> " + sueldoTotal); } else {
+		 * System.out.println("Datos incorrectos"); }
+		 */
+
+		/*
+		 * sistema de puntos: tenemos 3 oportunidades puntos menos de 10 otorgamos x
+		 * premio
+		 * 
+		 */
+		/*
+		 * int op = 3, intento = 1, ptos = 0, ptosTotales = 0; while (intento <= op) {
+		 * System.out.println("Es tu intento " + intento +
+		 * ", escribe los puntos que tienes"); ptos = teclado.nextInt(); ptosTotales +=
+		 * ptos; if (ptosTotales <= 5) {
+		 * System.out.println("No tienes premio, tus puntos acumulados " +ptosTotales);
+		 * } else if (ptosTotales > 5 && ptosTotales <= 20) {
+		 * System.out.println("Ganaste un helado"); } else if (ptosTotales > 20 &&
+		 * ptosTotales <= 40) { System.out.println("Ganaste un dulce de leche"); } else
+		 * if (ptosTotales <= 100) { System.out.println("Ganaste un peluche"); } else {
+		 * System.out.println("No existe el puntaje"); break; } intento++; }
+		 */
+
+		/*
+		 * do{ instrucciones ajuste }while(condición)
+		 */
+		/*
+		 * int num = 200; do { System.out.println(num); num += 2; } while (num <= 40);
+		 */
+		/*
+		 * for(inicio;condición;ajuste){ instrucciones }
+		 */
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+	}
+
+}
