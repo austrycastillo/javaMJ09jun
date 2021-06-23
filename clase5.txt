@@ -1,0 +1,121 @@
+package com.educacionit.modules;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		/*
+		 * armar un for con los números del 250 al 300 mostrar en pantalla la suma de
+		 * estos números
+		 */
+		/*
+		 * int suma = 0; for (int i = 250; i <= 300; i++) { System.out.println(i); suma
+		 * += i; //System.out.println(suma); }
+		 * System.out.println("****LA SUMA TOTAL ES : " + suma);
+		 */
+		/*
+		 * @
+		 * 
+		 * @@
+		 * 
+		 * @@@
+		 * 
+		 * @@@@
+		 * 
+		 * @@@@@
+		 * 
+		 * @@@@@@
+		 */
+		/*
+		 * String a = "@"; for (int i = 1; i <= 6; i++) { System.out.println(a); a +=
+		 * "@"; }
+		 */
+		/*
+		 * solicitar dos números al usuario crear un for iniciando con el número +
+		 * pequeño
+		 */
+		/*
+		 * int min=0,max=0; System.out.println("Escribe el primer número"); int num1 =
+		 * teclado.nextInt(); System.out.println("Escribe el segundo número"); int num2
+		 * = teclado.nextInt(); boolean op = false; if(num1 < num2) { min = num1; max =
+		 * num2; op = true; }else if(num2 < num1) { min = num2; max = num1; op = true;
+		 * }else { System.out.println("no puedo operar con números iguales"); } if(op) {
+		 * for(int i = min;i <= max;i++) { System.out.println(i); } }
+		 */
+
+		/*
+		 * competencia de atletas solicitar cantidad de atletas determinar el ganador
+		 */
+		/*
+		 * System.out.println("Cuántos atletas van a participar?"); int run =
+		 * teclado.nextInt(); String nombre = "",ganador=""; double tiempo = 0; double
+		 * min = 100; for (int i = 1; i <= run; i++) {
+		 * System.out.println("Ingrese el tiempo"); tiempo = teclado.nextDouble();
+		 * System.out.println("Escribe el nombre del atleta"); nombre = teclado.next();
+		 * if(tiempo < min) { min = tiempo; ganador = nombre; } }
+		 * System.out.println("El ganador es " + ganador + ", con un tiempo de " + min);
+		 */
+		/*
+		 * desarrollar un sistema de caja (3 productos) calcular subtotales por
+		 * productos si supera X monto le otorgamos un descuento mostrar el detalle de
+		 * compra con el total a pagar do while variables: cantidad - precio -
+		 * subtotales - total max para desc - desc - opción
+		 */
+		double total = 0;
+		double precioCho = 100, precioGa = 50, precioSp = 85;
+		double subCho = 0, subGa = 0, subSp = 0;
+		int cantidad = 0;
+		double maxDesc = 300;
+		double desc = 0.95;
+		int opc;
+		boolean flag = false;
+		String sigue;
+		System.out.println("****BIENVENIDO A LA TIENDA***");
+		do {
+			System.out.println("¿Qué desea comprar?" + "\n\t1 Chocolate \n\t2 Galleta" + "\n\t3 Sprite");
+			opc = teclado.nextInt();
+			switch (opc) {
+			case 1:
+				System.out.println("El precio del chocolate es " + precioCho);
+				System.out.println("¿Cantidad?");
+				cantidad = teclado.nextInt();
+				subCho += (precioCho * cantidad);
+				break;
+			case 2:
+				System.out.println("El precio del Galleta es " + precioGa);
+				System.out.println("¿Cantidad?");
+				cantidad = teclado.nextInt();
+				subGa += (precioGa * cantidad);
+				break;
+			case 3:
+				System.out.println("El precio del sprite es " + precioSp);
+				System.out.println("¿Cantidad?");
+				cantidad = teclado.nextInt();
+				subSp += (precioSp * cantidad);
+				break;
+			default:
+				System.out.println("No existe esa opción");
+				break;
+			}
+			System.out.println("¿Quieres seguir comprando? S/N");
+			sigue = teclado.next();
+			if (sigue.equals("S")) {
+				flag = true;
+			} else {
+				flag = false;
+			}
+		} while (flag);
+		System.out.println("subtotal chocolate.... " + subCho);
+		System.out.println("subtotal galleta.... " + subGa);
+		System.out.println("subtotal sprite.... " + subSp);
+		total = subCho + subGa + subSp;
+		System.out.println("subtotal general.... " + total);
+		if(total > maxDesc) {
+			total *= desc;
+		}
+		System.out.println("Total a pagar.... " + total);
+	}
+
+}
